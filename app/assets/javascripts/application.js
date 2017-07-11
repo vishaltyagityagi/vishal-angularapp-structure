@@ -6,3 +6,5 @@
 //= require bootstrap
 //= require_tree ./angular
 //= require_tree ./channels
+//= require js-routes
+

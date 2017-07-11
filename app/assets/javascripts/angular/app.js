@@ -9,19 +9,13 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
     })
     .state('/customers', {
       url: '/customers',
-      templateUrl: 'angular/templates/customer/customer.html',
+      templateUrl: 'angular/templates/customers/customer.html',
       controller: 'CustomersController',
+    })
+    .state('/customer', {
+      url: '/customer/:id',
+      templateUrl: 'angular/templates/customers/show.html',
+      controller: 'CustomerController',
     });
-    // .state('/customer', {
-    //   url: '/customers/:customerId',
-    //   templateUrl: 'angular/templates/customers/show.html',
-    //   controller: 'CustomerController'
-    // })
-    // .state('/repair', {
-    //   url: '/customers/:customerId/repairs/:repairId',
-    //   templateUrl: 'angular/templates/repairs/show.html',
-    //   controller: 'RepairController'
-    // });
-
   $urlRouterProvider.otherwise('/');
 }]);

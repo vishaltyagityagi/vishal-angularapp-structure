@@ -49,3 +49,5 @@ end
 gem 'angular-rails-templates'
 gem 'angular_rails_csrf'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem "js-routes"
+gem 'pry'

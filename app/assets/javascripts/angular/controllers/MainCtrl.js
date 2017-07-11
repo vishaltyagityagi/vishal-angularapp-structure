@@ -1,5 +1,5 @@
 var app = angular.module('app');
 
 app.controller('MainController', ['$scope', function($scope) {
-  $scope.test = "Welcome in the main application!";
+  $scope.test = "Welcome in the customers application!";
 }]);
